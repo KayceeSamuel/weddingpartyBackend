@@ -18,7 +18,8 @@ const Models = require('./models.js');
 const Weddings = Models.Wedding;
 const Users = Models.User;
 
-mongoose.connect('mongodb://localhost:27017/weddingDB', { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connect('mongodb://localhost:27017/weddingDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://KayceeSamuel:Starchichi00@kaycee.qkmkk.mongodb.net/weddingDB?retryWrites=true&w=majority')
 
 //Importing cors
 const cors = require('cors');
