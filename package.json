@@ -1,13 +1,44 @@
 {
   "name": "y",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.17.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
-
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KayceeSamuel/weddingpartyBackend.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/KayceeSamuel/weddingpartyBackend/issues"
+  },
+  "homepage": "https://github.com/KayceeSamuel/weddingpartyBackend#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body": "^5.1.0",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.1.6",
+    "morgan": "^1.10.0",
+    "parser": "^0.1.4",
+    "passport": "^0.5.2",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0"
+  },
+  "description": ""
 }
