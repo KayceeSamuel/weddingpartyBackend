@@ -18,12 +18,16 @@ const Models = require('./models.js');
 const Weddings = Models.Wedding;
 const Users = Models.User;
 
-//mongoose.connect('mongodb://localhost:27017/weddingDB', { useNewUrlParser: true, useUnifiedTopology: true });
-mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/weddingDB', { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 //Importing cors
 const cors = require('cors');
-app.use(cors());
+const corsConfig = {
+    credentials: true,
+    origin: true,
+}
+app.use(cors(corsConfig));
 
 //Importing auth.js file to the project
 let auth = require('./auth.js')(app);
